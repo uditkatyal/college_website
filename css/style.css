@@ -79,7 +79,7 @@ body {
   position: relative;
   text-align: center;
   color: Black;
-  background-image: url(/college_website/assets/img1.png);
+  background-image: url(/assets/img1.png);
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -92,7 +92,6 @@ body {
 .centered {
   opacity: 50%;
   height: 100%;
-
 }
 #color-overlay {
   position: absolute;
@@ -103,8 +102,7 @@ body {
   background-color: black;
   opacity: 0.6;
 }
-#clg-name{
+#clg-name {
   font-size: 3.5rem;
   color: white;
-  
 }
