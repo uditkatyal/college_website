@@ -4,97 +4,99 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/contactus.css" />
     <title>Document</title>
   </head>
   <body>
-    <section class="contact_wrapper">
-      <div class="contact_info">
-        <h3 class="title">Contact Info</h3>
-
-        <ul class="icons_wrapp">
-          <li>
-            <div class="icon">
-              <span class="material-icons-outlined"> place </span>
-            </div>
-            <div class="text">
-              123 ABCDedf Road, 123 ABC, ABCD - 123456123 ABCDedf Road, 123 ABC,
-              ABCD - 123456
-            </div>
-          </li>
-          <li>
-            <div class="icon">
-              <span class="material-icons-outlined"> mail_outline </span>
-            </div>
-            <div class="text">ABCDedfRoad@ABCD.com</div>
-          </li>
-          <li>
-            <div class="icon">
-              <span class="material-icons-outlined"> phone_in_talk </span>
-            </div>
-            <div class="text">123-456-789</div>
-          </li>
-        </ul>
-
-        <ul class="soci_wrap">
-          <li>
-            <a href="#">
-              <span class="material-icons-outlined"> facebook </span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span class="material-icons-outlined"> face </span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span class="material-icons-outlined"> facebook </span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span class="material-icons-outlined"> face </span>
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="contact_msg">
-        <h3 class="title">Send a Message</h3>
-
-        <div class="form_fild">
-          <div class="input_group w_50">
-            <input type="text" class="input" required />
-            <label class="placeholder">First Name</label>
-          </div>
-
-          <div class="input_group w_50">
-            <input type="text" class="input" required />
-            <label class="placeholder">Last Name</label>
-          </div>
-
-          <div class="input_group w_50">
-            <input type="text" class="input" required />
-            <label class="placeholder">Emal Address</label>
-          </div>
-
-          <div class="input_group w_50">
-            <input type="tel" class="input" required />
-            <label class="placeholder">Mobile Number</label>
-          </div>
-
-          <div class="input_group w_100">
-            <textarea class="input input_textarea" rows="6" required></textarea>
-            <label class="placeholder textarea"
-              >Write your message here...</label
-            >
-          </div>
-
-          <div class="input_group">
-            <input type="submit" class="btn" value="Send" />
-          </div>
+      
+    <header class="container is-narrow pageHeader">
+        <div class="columns">
+           <div class="column">
+              <h1 class="pageHeading">Contact Us</h1>
+           </div>
         </div>
-      </div>
-    </section>
+     </header>
+     <main>
+        <div class="lead__form__outer">
+           <div class="container is-centered">
+              <div class="columns">
+                 <div class="column">
+                    <div class="lead__form__wrapper ">
+                       <div class="success" style="display: none">
+                          <h3><strong>Thank you, ! Your submission has been received</strong></h3>
+                          <a href="/" class="form__back">
+                             Back to main page
+                          </a>
+                       </div>
+                       <div class="form" style="display: block">
+                          <form action="/contact/action" id="dropzoneForm" class="dropzone dz-clickable" enctype="multipart/form-data" method="post" autocomplete="off">
+                             <input type="hidden" name="_token" value="EUGiIHt3W0SmutBaJ3yWOSOOk2RKtFfoTFt8xHCM">
+                             <div class="form__grid">
+                                <div class="form__row">
+                                   <input data-info="referrer" type="hidden" value="">
+                                   <div class="form__col form__col--1_2">
+                                      <div class="form__area">
+                                         <div class="form__area__title">First name</div>
+                                         <div class="form__area__field form__area__field--required" title="Required">
+                                            <input data-info="first_name" name="first_name" type="text" class="form__input " placeholder="Yahuushuwah" value="">
+                                         </div>
+                                      </div>
+                                   </div>
+                                   <div class="form__col form__col--1_2">
+                                      <div class="form__area">
+                                         <div class="form__area__title">Last name</div>
+                                         <div class="form__area__field form__area__field--required">
+                                            <input data-info="last_name" name="last_name" type="text" class="form__input" placeholder="TorahTech" value="">
+                                         </div>
+                                      </div>
+                                   </div>
+                                </div>
+                                
+                                <div class="form__row">
+                                   <div class="form__col form__col--1_2">
+                                    <div class="form__area">
+                                        <div class="form__area__title">Email</div>
+                                        <div class="form__area__field form__area__field--required ">
+                                           <input data-info="email" name="email" type="text" class="form__input" placeholder="torahtech@torahtech.tech" value="">
+                                        </div>
+                                     </div>
+                                      
+                                   </div>
+                                   <div class="form__col form__col--1_2">
+                                      <div class="form__area">
+                                         <div class="form__area__title">Phone number</div>
+                                         <div class="form__area__field">
+                                            <input data-info="phone" name="phone" type="text" class="form__input" placeholder="+1...." value="">
+                                         </div>
+                                      </div>
+                                   </div>
+                                </div>
+                                <div class="form__row" data-row="prelast">
+                                   <div class="form__area">
+                                      <div class="form__area__title">Message</div>
+                                      <div class="form__area__field">
+                                         <textarea id="message" name="message" class="form__textarea" rows="4" placeholder="Your message..." data-info="message" maxlength="256"></textarea>
+                                      </div>
+                                   </div>
+                                </div>
+                             </div>
+                             <div class="dz-message" data-dz-message=""><span>
+                                   Drop your files<br>
+                                   <small>.doc, .docx, .pdf, .odt, .rtf or .txt. Maximum file size: 10MB</small>
+                                </span></div>
+                          </form>
+                          <div class="form__row">
+                             <div class="form__col form__col--1 form__submit__wrapper">
+                                <div data-info="submit" class="form__submit">
+                                   Submit Request
+                                </div>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
   </body>
 </html>
