@@ -8,34 +8,54 @@ body {
 }
 
 .head-container {
+  box-shadow: 1px 3px 10px rgba(0, 0, 0);
+  margin-top: 20px;
   position: relative;
   width: 100%;
-  height: 20vh;
-  background-color: #0e1329;
+  height: 30vh;
+  background-image: url(/assets/stone-wall-bricks-texture-header.jpg);
+  background-repeat: no-repeat;
 }
 
 h1 {
   position: absolute;
-  top: 4rem;
-  left: 2rem;
-  text-align: left;
-  color: white;
+  top: 10rem;
+  left: 3rem;
+  color: black;
+  font-size: 3rem;
 }
 .list ul {
-  margin-top: 20px;
+  margin-top: 30px;
+  margin-bottom: 100px;
 }
 .list ul li {
+  font-size: 1.2rem;
   margin: 10px 0;
-  margin-left: 100px;
+  margin-left: 80px;
 }
 
-@media (max-width: 638px) {
+@media (max-width: 745px) {
+  .list {
+    /* align-items: center; */
+  }
   .list ul li {
-    margin: 10px 0 0 30px;
+    /* text-align: center; */
+    /* margin: 10px 0 0 30px; */
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 602px) {
   h1 {
-    font-size: 25px;
+    font-size: 40px;
+  }
+  .list {
+    margin-left: 0;
+  }
+}
+@media (max-width: 589px) {
+  h1 {
+    font-size: 35px;
+  }
+  .list {
+    margin: 20px 0 0 -45px;
   }
 }
