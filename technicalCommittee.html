@@ -4,62 +4,120 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/committee.css" />
     <title>Technical Committee</title>
   </head>
   <body>
-    <div class="menu_bar">
-      <a href="https://adgitmdelhi.ac.in/"
-        ><img class="logo" src="assets/ADGITM-WEB-LOGO.png" alt=""
-      /></a>
+    <!-- navbar begins -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light"
+      style="background-color: #e3f2fd"
+    >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-      <ul>
-        <li><a class="nav" href="index.html">HOME</a></li>
-        <li class="dropdown_menu">
-          <a class="nav" href="#">Committee</a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html"
+              >HOME <span class="sr-only">(current)</span></a
+            >
+          </li>
 
-          <div>
-            <ul>
-              <li><a href="advisory.html">Advisory committee</a></li>
-              <li>
-                <a href="technicalCommittee.html"
-                  >Technical Program Committee</a
-                >
-              </li>
-              <li><a href="organising.html">Organizing Committee</a></li>
-              <li><a href="student.html">Student Committee</a></li>
-            </ul>
-          </div>
-        </li>
-        <li class="dropdown_menu">
-          <a class="nav" href="#">For Authors</a>
-          <div>
-            <ul>
-              <li><a href="track.html">Tracks</a></li>
-              <li><a href="">Registration</a></li>
-            </ul>
-          </div>
-        </li>
-        <li class="dropdown_menu">
-          <a class="nav" href="#">General Information</a>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link active dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              COMMITTEE
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="advisory.html"
+                >ADVISORY COMMITTEE</a
+              >
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="technicalCommittee.html"
+                >TECHNICAL PROGRAM COMMITTEE</a
+              >
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="organising.html"
+                >ORGANIZATION COMMITTEE</a
+              >
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="student.html">STUDENT COMMITTEE</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link active dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              FOR AUTHORS
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="track.html">TRACKS</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">REGISTERATION</a>
+            </div>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="impdates.html"
+              >IMPORTANT DATES <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="call.html"
+              >CALL FOR PAPERS <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="contactus.html"
+              >CONTACT US <span class="sr-only">(current)</span></a
+            >
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+            Search
+          </button>
+        </form>
+      </div>
+    </nav>
+    <!-- navbar ends -->
 
-          <div>
-            <ul>
-              <li><a href="aboutus.html">About ADGITM</a></li>
-              <li><a href="">GAllery</a></li>
-            </ul>
-          </div>
-        </li>
-        <li><a class="nav" href="impdates.html">Important Dates</a></li>
-        <li><a class="nav" href="call.html">Call for Paper</a></li>
-        <li><a class="nav" href="contactus.html">Contact Us</a></li>
-      </ul>
-    </div>
-
-    
-    <div class="head-container"></div>
-    <h1>TECHNICAL COMMITTEE</h1>
+    <div class="head-container"><h1>TECHNICAL COMMITTEE</h1></div>
 
     <div class="list">
       <ul>
@@ -81,5 +139,20 @@
         <li>Prof.Parul Gandhi Manav Rachna university, Haryana</li>
       </ul>
     </div>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

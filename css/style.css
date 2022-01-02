@@ -109,3 +109,10 @@ body {
   position: relative;
   z-index: 10;
 }
+.nav-item:hover {
+  font-weight: bold;
+}
+.dropdown-item:hover {
+  font-weight: bold;
+  background-color: aqua;
+}
