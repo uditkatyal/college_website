@@ -12,6 +12,11 @@
 .about h2 {
   opacity: 0.8;
 }
+.about p {
+  margin: 0 3rem;
+  margin-bottom: 20px;
+}
+
 .about span {
   display: block;
   width: 100px;
