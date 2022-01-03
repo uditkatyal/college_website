@@ -10,18 +10,22 @@ body {
 /* header css */
 header {
   display: flex;
-  width: 100vw;
+  width: 100%;
   background-color: rgb(177, 215, 241);
+  /* justify-content: space-between; */
 }
 #conf-name {
-  width: 40vw;
-  text-align: center;
+  width: auto;
+  /* margin-left: 20px; */
+  /* text-align: center; */
+  color: #2c2c2e;
+  font-size: x-large;
   font-weight: 700;
   padding-top: 10px;
 }
 
 #conf-name :hover {
-  color: red;
+  color: #e71744;
   cursor: pointer;
 }
 @media (max-width: 426px) {
@@ -31,15 +35,6 @@ header {
   #conf-name {
     padding-top: 0;
   }
-}
-
-#header-links {
-  width: 30vw;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  padding-top: 10px;
-  /* margin: 40px; */
 }
 
 #clg-logo {
