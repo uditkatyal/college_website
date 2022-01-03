@@ -366,13 +366,21 @@ h2 {
   display: none;
 }
 
-#grid-template{
+#grid-template {
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-gap: 12px;
 }
+#grid-template-2 {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-gap: 12px;
+}
+#grid-template-2 .finance-sponsor {
+  padding: 20px;
+}
 
-sponsor{
+sponsor {
   text-align: center;
 }
 @media (max-width: 1024px) {
