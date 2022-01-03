@@ -366,6 +366,15 @@ h2 {
   display: none;
 }
 
+#grid-template{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 12px;
+}
+
+sponsor{
+  text-align: center;
+}
 @media (max-width: 1024px) {
   #header-links {
     flex-direction: column;
