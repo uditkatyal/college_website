@@ -34,10 +34,15 @@ header {
   
 }
 
-#sponsors {
+#sponsors-header {
   width: 30vw;
   display: flex;
+  text-align: center;
+  justify-content: center;
+  padding-top: 10px;
+
 }
+
 #clg-logo {
   width: 30vw;
 }
