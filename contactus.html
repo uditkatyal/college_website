@@ -5,99 +5,154 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/contactus.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
   </head>
   <body>
+
+   <nav
+      class="navbar navbar-expand-lg navbar-light"
+      style="background-color: #e3f2fd"
+    >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html"
+              >HOME <span class="sr-only">(current)</span></a
+            >
+          </li>
+
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link active dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              COMMITTEE
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="advisory.html"
+                >ADVISORY COMMITTEE</a
+              >
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="technicalCommittee.html"
+                >TECHNICAL PROGRAM COMMITTEE</a
+              >
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="organising.html"
+                >ORGANIZATION COMMITTEE</a
+              >
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="student.html">STUDENT COMMITTEE</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link active dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              FOR AUTHORS
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="track.html">TRACKS</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="Registration.html"
+                >REGISTERATION</a
+              >
+            </div>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="impdates.html"
+              >IMPORTANT DATES <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="call.html"
+              >CALL FOR PAPERS <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="contactus.html"
+              >CONTACT US <span class="sr-only">(current)</span></a
+            >
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+            Search
+          </button>
+        </form>
+      </div>
+    </nav>
       
-    <header class="container is-narrow pageHeader">
-        <div class="columns">
-           <div class="column">
-              <h1 class="pageHeading">Contact Us</h1>
-           </div>
-        </div>
-     </header>
+   <div class="content">
+     <h1 class="title">Contact Us</h1>
+     <div class="contact-info">
+       <ul>
+         <li><div class="circle"><i class="fas fa-map-marker-alt"></i></div>FC-26,Shastri Park,Delhi - 053</li>
+         <li><div class="circle"><i class="fas fa-phone"></i></div> +0 000 0000000</li>
+         <li><div class="circle"><i class="fas fa-envelope"></i></div> name@address.com</li>
+       </ul>
+       
+     </div>
+   </div>
+      
+    </div>
      <main>
-        <div class="lead__form__outer">
-           <div class="container is-centered">
-              <div class="columns">
-                 <div class="column">
-                    <div class="lead__form__wrapper ">
-                       <div class="success" style="display: none">
-                          <h3><strong>Thank you, ! Your submission has been received</strong></h3>
-                          <a href="/" class="form__back">
-                             Back to main page
-                          </a>
-                       </div>
-                       <div class="form" style="display: block">
-                          <form action="/contact/action" id="dropzoneForm" class="dropzone dz-clickable" enctype="multipart/form-data" method="post" autocomplete="off">
-                             <input type="hidden" name="_token" value="EUGiIHt3W0SmutBaJ3yWOSOOk2RKtFfoTFt8xHCM">
-                             <div class="form__grid">
-                                <div class="form__row">
-                                   <input data-info="referrer" type="hidden" value="">
-                                   <div class="form__col form__col--1_2">
-                                      <div class="form__area">
-                                         <div class="form__area__title">First name</div>
-                                         <div class="form__area__field form__area__field--required" title="Required">
-                                            <input data-info="first_name" name="first_name" type="text" class="form__input " placeholder="First Name" value="">
-                                         </div>
-                                      </div>
-                                   </div>
-                                   <div class="form__col form__col--1_2">
-                                      <div class="form__area">
-                                         <div class="form__area__title">Last name</div>
-                                         <div class="form__area__field form__area__field--required">
-                                            <input data-info="last_name" name="last_name" type="text" class="form__input" placeholder="Last Name" value="">
-                                         </div>
-                                      </div>
-                                   </div>
-                                </div>
-                                
-                                <div class="form__row">
-                                   <div class="form__col form__col--1_2">
-                                    <div class="form__area">
-                                        <div class="form__area__title">Email</div>
-                                        <div class="form__area__field form__area__field--required ">
-                                           <input data-info="email" name="email" type="text" class="form__input" placeholder="enterMail@gmail.com" value="">
-                                        </div>
-                                     </div>
-                                      
-                                   </div>
-                                   <div class="form__col form__col--1_2">
-                                      <div class="form__area">
-                                         <div class="form__area__title">Phone number</div>
-                                         <div class="form__area__field">
-                                            <input data-info="phone" name="phone" type="text" class="form__input" placeholder="+91..." value="">
-                                         </div>
-                                      </div>
-                                   </div>
-                                </div>
-                                <div class="form__row" data-row="prelast">
-                                   <div class="form__area">
-                                      <div class="form__area__title">Message</div>
-                                      <div class="form__area__field">
-                                         <textarea id="message" name="message" class="form__textarea" rows="4" placeholder="Your message..." data-info="message" maxlength="256"></textarea>
-                                      </div>
-                                   </div>
-                                </div>
-                             </div>
-                             <div class="dz-message" data-dz-message=""><span>
-                                   Drop your files<br>
-                                   <small>.doc, .docx, .pdf, .odt, .rtf or .txt. Maximum file size: 10MB</small>
-                                </span></div>
-                          </form>
-                          <div class="form__row">
-                             <div class="form__col form__col--1 form__submit__wrapper">
-                                <div data-info="submit" class="form__submit">
-                                   Submit Request
-                                </div>
-                             </div>
-                          </div>
-                       </div>
-                    </div>
-                 </div>
-              </div>
-           </div>
-        </div>
         
+      <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
