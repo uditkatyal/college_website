@@ -1,15 +1,15 @@
-1. track remove from navbar
-2. either for latex till end remove (registeration page )
-3. max 8 page 
+1. track remove from navbar DONE
+2. either for latex till end remove (registeration page ) DONE
+3. max 8 page DONE
 4. contact us 2 [phone numbers] one mail that's it!!
-5. remove organising chaiperson
+5. remove organising chaiperson DONE
 
-6. conveners  : prof (dr.) prashant singh 
-7.co conveners - Dhaynedra jain , miss charul divan 
-Proceeding commitee members : Dr. meenakshi yadav
+6. conveners  : prof (dr.) prashant singh DONE
+7.co conveners - Dhaynedra jain , miss charul divan DONE
+Proceeding commitee members : Dr. meenakshi yadav DONE
 then
-technical
-then publicity commitee remove member
+technical DONE
+then publicity commitee remove member DONE
 techically ssupported
 confernce id : 55379
 
