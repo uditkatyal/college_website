@@ -51,6 +51,11 @@ header {
 #clg-logo img {
   width: 30vw;
 }
+@media (max-width: 500px) {
+  #clg-logo img{
+    width: 200px;
+  }
+}
 
 .nav-item:hover {
   font-weight: bold;
